@@ -1,6 +1,5 @@
 const express = require("express");
 const axios = require('axios');
-
 const app = express();
 const port = 3000;
 
@@ -11,7 +10,7 @@ app.get("/", (req,res) => {
 app.get("/say", async (req,res) => {
   let queryData = req.query.keyword;
   try {
-    const response = await axios.get(`https://cnqfhwahuwzjvknva4nfxv7ytm0dmkdg.lambda-url.us-east-1.on.aws`, {
+    const response = await axios.get(`https://cnqfhxwahuwzjvknva4nfv7ytm0dmkdg.lambda-url.us-east-1.on.aws`, {
       params: {
         keyword: queryData
       }}
